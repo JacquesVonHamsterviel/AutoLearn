@@ -1,5 +1,6 @@
 <body>
 <p>How To Install? 2020.05.05版本</p>
+  <img src="https://raw.githubusercontent.com/JacquesVonHamsterviel/AutoLearn/master/environment/Files.PNG" width="290" height="239" />
 <p>Tips:如果之前添加过环境变量ADB1.0.40请确保删除之</p>
 <p>1.安装JDK，本文使用JDK1.8</p>
 <p>在环境变量中新建JAVA_HOME变量，值为JDK安装路径，如C:\Program Files\Java\jdk1.8.0_05<br />
