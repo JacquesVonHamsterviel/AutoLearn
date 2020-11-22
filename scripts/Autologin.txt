@@ -1,0 +1,20 @@
+单击“开始”，然后单击“运行”。
+在 "打开" 框中，键入 " Regedt32"，然后按 enter。
+在注册表中找到以下子项：
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon
+双击 " DefaultUserName " 条目，键入您的用户名，然后单击"确定"。
+双击 " DefaultPassword " 条目，键入您的密码，然后单击"确定"。 注意 如果DefaultPassword值不存在，则必须添加它。 若要添加值，请按照下列步骤操作：  
+在 "编辑" 菜单上，单击 "新建"，然后指向 "字符串值"。
+键入DefaultPassword，然后按 Enter。
+双击 " DefaultPassword"。
+在 "编辑字符串" 对话框中，键入您的密码，然后单击"确定"。
+注意 如果未指定 DefaultPassword 字符串，则 Windows 会自动将AutoAdminLogon键的值从1（true）更改为0（false），从而禁用 AutoAdminLogon 功能。  
+在 "编辑" 菜单上，单击 "新建"，然后指向 "字符串值"。
+键入AutoAdminLogon，然后按 Enter。
+双击 " AutoAdminLogon"。
+在 "编辑字符串" 对话框中，键入1 ，然后单击"确定"。
+如果已将计算机加入域，则应添加DefaultDomain值，并将该值的数据设置为域的完全限定的域名（FQDN）。
+退出注册表编辑器。
+单击 "开始"，单击 "关闭"，然后在 "批注" 文本框中键入原因。
+单击"确定"关闭您的计算机。
+重启计算机。 您现在可以自动登录。

@@ -1,10 +1,13 @@
+::使用GB2312编码，请用Notepad类软件进行更改，否则中文会乱码！
+
+
 @echo off
 ::mode con cols=80 lines=30
 title=运行信息输出窗口
 color 0f
 cd /d %~dp0
 echo=
-echo [INFO] 欢迎来到AutoLearn！
+echo [INFO] 欢迎！
 echo=
 echo [INFO] 此脚本显示语言：简体中文
 echo=
@@ -56,6 +59,10 @@ If NOT "%str1%"=="%str1:logout_or_not=%" (echo [INFO] 主程序结束) else goto run
 
 echo=
 echo [INFO] 自动学习完毕，请自行检查分数。
+echo=
+echo [INFO]学习完毕，发送通知！
+start D:\AutoLearn\scripts\Notification-Finish.cmd
+echo [INFO]通知发送完毕！
 echo=
 echo=[INFO] 60秒后自动关闭！
 TIMEOUT /T 60

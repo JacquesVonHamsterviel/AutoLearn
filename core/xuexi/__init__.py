@@ -195,9 +195,8 @@ class App(Automation):
 
     def view_score(self):
         self.safe_click(rules['score_entry'])
-        titles = ["登录", "阅读文章", "视听学习", "文章学习时长", 
-                "视听学习时长", "每日答题", "每周答题", "专项答题", 
-                "挑战答题", "订阅", "收藏", "分享", "发表观点", "本地频道"]
+        titles = ["登录", "我要选读文章", "视听学习", "视听学习时长", "每日答题", "每周答题", "专项答题", 
+                "挑战答题", "订阅","分享", "发表观点", "本地频道"]
         score_list = self.wait.until(EC.presence_of_all_elements_located((By.XPATH, rules['score_list'])))
         # score_list = self.find_elements(rules["score_list"])
         for t, score in zip(titles, score_list):
@@ -745,7 +744,7 @@ class App(Automation):
             self.read_count = cfg.getint("prefers", "article_count")
             self.read_delay = 30
         except:
-            g, t = self.score["阅读文章"]
+            g, t = self.score["我要选读文章"]
             if t == g:
                 self.read_count = 0
                 self.read_delay = random.randint(45, 60)

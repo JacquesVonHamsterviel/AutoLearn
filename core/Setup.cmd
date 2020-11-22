@@ -1,3 +1,6 @@
+::使用UTF-8编码，请用Notepad类软件进行更改，否则中文会乱码！
+
+
 @echo off
 chcp 65001
 title=Setup

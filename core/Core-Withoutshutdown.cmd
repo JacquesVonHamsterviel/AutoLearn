@@ -1,3 +1,6 @@
+::使用GB2312编码，请用Notepad类软件进行更改，否则中文会乱码！
+
+
 @echo off
 ::mode con cols=80 lines=30
 title=运行信息输出窗口
